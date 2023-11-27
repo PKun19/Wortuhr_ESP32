@@ -54,6 +54,9 @@
 //Then the Library Manager will open and you will find a list of libraries that are already installed or ready for installation.
 //Then search for SunRise using the search bar.
 //Click on the text area and then select the specific version and install it.
+//Arduino_JSON
+//mDNS
+//Time
 
 
 #define FIRMWARE_VERSION "ESP32_20210601"

@@ -11,12 +11,12 @@
 
 #define WIFIHOSTNAME "WU_ESP32"                // Das ist der default Hostname/Systemname. Der eigentliche Systemname wird in Settings eingestellt.
 #define WIFI_SETUP_TIMEOUT 30                  // So lange wird versucht eine Verbindung zum WLAN aufzubauen. Ab dann wird ein AP (AccessPoint) zum eingeben der WiFi Parameter gestartet
-#define WIFI_SID "Wlan-SID"                    // Die default WIFI-SID. Die eigentliche WIFI-SID wird in Settings eingestellt.
-#define WIFI_PW "Wlan-Passwort"                // Das default WIFI Passwort. Die eigentliche WIFI Passwort wird in Settings eingestellt.
+#define WIFI_SID "WORTUHR"                    // Die default WIFI-SID. Die eigentliche WIFI-SID wird in Settings eingestellt.
+#define WIFI_PW "1234567890"                // Das default WIFI Passwort. Die eigentliche WIFI Passwort wird in Settings eingestellt.
 #define OTA_PASS "1234"                        // Passwort für den OTA (Over the Air) Update
-#define NTP_SERVER "fritz.box"                 // Das ist der default Name des Zeitservers. Der eigentliche Zeitserver wird in Settings eingestellt.
+#define NTP_SERVER "de.pool.ntp.org"                 // Das ist der default Name des Zeitservers. Der eigentliche Zeitserver wird in Settings eingestellt.
 #define SHOW_IP                                // Zeigt die IP-Adresse beim Start
-#define WIFI_BEEPS                             // ob die WLAN Verbunden Meldung kommt
+//#define WIFI_BEEPS                             // ob die WLAN Verbunden Meldung kommt
 
 //#define NONE_TECHNICAL_ZERO                  // ob die Null bei Feed mit oder ohne Schrägstrich angezeigt wird.
 #define AUTO_MODECHANGE_TIME 900               // Default AutoMode Change Periode. Die eigentliche Periode wird in Settings eingestellt.
@@ -99,7 +99,7 @@
 
 #define SERIAL_SPEED 115200
 
-#define NUMPIXELS 115
+#define NUMPIXELS 114
 #define ESP_LED
 
 // Gibt es eine LED Kette für die Sekunden (nicht vergessen den Anschluß dafür zu definieren siehe weiter unten bei ESP32 Anschlüsse)
@@ -119,7 +119,7 @@
 #define ONOFF_TOUCH_SENS 3                       // Empfindlichkeit der OnOff Touch Sensoren 1-20 (je kleiner desto empfindlicher)
 
 // Ist ein BME280 an Board
-#define SENSOR_BME280
+//#define SENSOR_BME280
 #define SEALEVELPRESSURE_HPA (1013.25)
 #define BME_TEMPERATURE_OFFSET -1.2              // Temperaturkorrektur
 #define BME_HUMIDITY_OFFSET +0.1                 // Luftfeuchtekorrektur
@@ -127,9 +127,9 @@
 #define SunRiseLib                               // Sonnenaufgang/Sonnenuntergang wird über die Lib SunRise.h berechnet.
                                                  // Die RunRise Lib ist in der Bibliotheksverwaltung zu finden.
 #define YRNO   
-#define LONGITUDE 9.83                           // Default LONGITUDE/LATITUDE. Der Standortwerte werden in Settings eingestellt.
-#define LATITUDE 50.66                           // Dafür wird der Standort benötigt. Kann z.B. über google maps erfolgen.
-#define HOEHE_UEBER_0 130                        // Hier die default Höhe über NN des Wohnortes eintragen.Der eigentliche Wert wird in Settings eingestellt.
+#define LONGITUDE 7.65                           // Default LONGITUDE/LATITUDE. Der Standortwerte werden in Settings eingestellt.
+#define LATITUDE 52.29                           // Dafür wird der Standort benötigt. Kann z.B. über google maps erfolgen.
+#define HOEHE_UEBER_0 75                        // Hier die default Höhe über NN des Wohnortes eintragen.Der eigentliche Wert wird in Settings eingestellt.
 
 #define YRNO_PERIODE 1800                        // wie oft in Sekunden yrno aufgerufen wird
 #define YRNO_MAX_ERROR 20                        // bei Fehler: wie oft es pro Tag versucht wird bis es aufgegeben wird.
@@ -159,7 +159,7 @@
 //#define BUZZTIME_TIMER 10
 
 // MP3 Spieler vorhanden:
-#define AUDIO_SOUND
+//#define AUDIO_SOUND
 
 #ifdef AUDIO_SOUND
 #define BUZZTIME_ALARM_1 10           // wie lange der Alarm1 an ist
@@ -231,7 +231,8 @@
 #endif //Ende AUDIO_SOUND
 
 // Das LED Layout (Siehe in LedDriver.cpp):
-#define LED_LAYOUT_HORIZONTAL_2
+#define LED_LAYOUT_HORIZONTAL_1
+//#define LED_LAYOUT_HORIZONTAL_2
 //#define LED_LAYOUT_VERTICAL_1
 //#define LED_LAYOUT_VERTICAL_2
 //#define LED_LAYOUT_VERTICAL_3
