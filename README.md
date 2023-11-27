@@ -47,22 +47,22 @@ Dies ist eine fortführung des ESP32 Wortuhr Projektes, die MP3 funktion werde i
 
 ## Animationen:  
 * Es können eigene Animationen für Deine Events erstellt werden.  
-![Herz](https://github.com/manfred-hofmann/Wortuhr_ESP32_mp3/blob/main/pic/HERZ.gif "Herz")  
+![Herz](https://github.com/PKun19/Wortuhr_ESP32/blob/main/pic/HERZ.gif "Herz")  
 * Über den eingebauten Animationseditor können Animationen erstellt werden  
-![Animationsmenue](https://github.com/manfred-hofmann/Wortuhr_ESP32_mp3/blob/main/pic/Animationsmenue.jpg "Animationsmenue")  
-![Animationsmenue2](https://github.com/manfred-hofmann/Wortuhr_ESP32_mp3/blob/main/pic/Animationsmenue2.jpg "Animationsmenue2")  
+![Animationsmenue](https://github.com/PKun19/Wortuhr_ESP32/blob/main/pic/Animationsmenue.jpg "Animationsmenue")  
+![Animationsmenue2](https://github.com/PKun19/Wortuhr_ESP32/blob/main/pic/Animationsmenue2.jpg "Animationsmenue2")  
 * Animationen mit bis zu 25 Frames möglich  
 * Dadurch der gif2animation Konverter von kollabierer (https://www.kollabierer.de/farbe) direkt nutzbar.   
 * Animationen mit Namen ZHHMM werden zur jeweiligen Stunde und Minute angezeigt (z.B. Z1200 startet eine Animation um 12 Uhr)  
 * Animation mit Name ALARM wird während des Alarms angezeigt.  
-![Alarm](https://github.com/manfred-hofmann/Wortuhr_ESP32_mp3/blob/main/pic/ALARM.gif "Alarm")   
+![Alarm](https://github.com/PKun19/Wortuhr_ESP32/blob/main/pic/ALARM.gif "Alarm")   
 * Alle Animationen werden im SPIFFS unter dem Name ani_ANINAME.json gespeichert und können über den Dateimanager gesichert/kopiert werden.  
 
 
 ## Events:   
 * Verschiedene Melodien werden passend zu den Events abgespielt.  
 * Events werden über die Weboberfläche gepflegt.  
-![Events](https://github.com/manfred-hofmann/Wortuhr_ESP32_mp3/blob/main/pic/Events.jpg "Events") 
+![Events](https://github.com/PKun19/Wortuhr_ESP32/blob/main/pic/Events.jpg "Events") 
 * Es können eigene Animationen für Deine Events erstellt werden.  
 * Alle Events werden im SPIFFS unter dem Namen events.json abgelegt und können über den Dateimanager gesichert/kopiert werden.  
 
@@ -70,11 +70,11 @@ Dies ist eine fortführung des ESP32 Wortuhr Projektes, die MP3 funktion werde i
 ## Spiele:  
 * 3 Wortuhrspiele integriert: 
 Snake   
-![Snake](https://github.com/manfred-hofmann/Wortuhr_ESP32_mp3/blob/main/pic/snake.gif "Snake")  
+![Snake](https://github.com/PKun19/Wortuhr_ESP32/blob/main/pic/snake.gif "Snake")  
 Tetris  
-![Tetris](https://github.com/manfred-hofmann/Wortuhr_ESP32_mp3/blob/main/pic/tetris.gif "Tetris")  
+![Tetris](https://github.com/PKun19/Wortuhr_ESP32/blob/main/pic/tetris.gif "Tetris")  
 Bricks  
-![Bricks](https://github.com/manfred-hofmann/Wortuhr_ESP32_mp3/blob/main/pic/bricks.gif "Bricks")  
+![Bricks](https://github.com/PKun19/Wortuhr_ESP32/blob/main/pic/bricks.gif "Bricks")  
 * Sichern der Highscores im NVS  
 
 
@@ -137,7 +137,7 @@ Die Zahlen entsprechen der LED-Nummer in der LED-Kette:
 ```
 
 Hier ein Beispiel Layout:  
-![LED-Layout](https://github.com/manfred-hofmann/Wortuhr_ESP32_mp3/blob/main/pic/LED-Beispiel-Layout.jpg "LED-Layout")   
+![LED-Layout](https://github.com/PKun19/Wortuhr_ESP32/blob/main/pic/LED-Beispiel-Layout.jpg "LED-Layout")   
 
 Möchte man auf die "Alarm LED" verzichten, so muss in der configuration.h die Anzahl der LEDs angepasst werden:  
 #define NUMPIXELS 114 -> ohne eigen Alarm LED  
@@ -161,9 +161,9 @@ Möchte man auf die "Alarm LED" verzichten, so muss in der configuration.h die A
 (Falls es damit auch Probleme gibt können die WLAN Parameter auch direkt in configuration.h gepflegt werden.)  
 * Danach startet der ESP32 neu. Jetzt mit dem Laptop auf die spiffs.html Webseite der ESP-Adresse gehen:  
     http://ESP32-IP/spiffs.html  
-![Spiffs1](https://github.com/manfred-hofmann/Wortuhr_ESP32_mp3/blob/main/pic/spiffs1.JPG "Spiffs1")
+![Spiffs1](https://github.com/PKun19/Wortuhr_ESP32/main/pic/spiffs1.JPG "Spiffs1")
 * Hier das komplette data Verzeichniss hochladen.  
-![Spiffs2](https://github.com/manfred-hofmann/Wortuhr_ESP32_mp3/blob/main/pic/spiffs2.JPG "Spiffs2")
+![Spiffs2](https://github.com/PKun19/Wortuhr_ESP32/blob/main/pic/spiffs2.JPG "Spiffs2")
 * __Evtl. nochmal die configuration.h durchgehen und die Einstellungen den eigenen Gegebenheiten anpassen!__   
 * restliche Einstellungen sind auf der Settings Seite zu finden  
 
