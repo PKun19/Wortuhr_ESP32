@@ -126,17 +126,17 @@ yrnoclient -> setInsecure();                  //ohne Certificate Check
       retcode = retcode + 16;
     }
     
-    symbol_code = weatherArray["data"]["next_1_hours"]["summary"]["symbol_code"];
+    symbol_code = (const char*)weatherArray["data"]["next_1_hours"]["summary"]["symbol_code"];
     regenmenge = (double)weatherArray["data"]["next_1_hours"]["details"]["precipitation_amount"];
 
 
     JSONVar unitsArray = JSON.parse(units);
-    regenmenge_units = unitsArray["units"]["precipitation_amount"];
-    temperature_units = unitsArray["units"]["air_temperature"];
-    windspeed_units = unitsArray["units"]["wind_speed"];
-    humidity_units = unitsArray["units"]["relative_humidity"];
-    clouds_units = unitsArray["units"]["cloud_area_fraction"];
-    pressure_units = unitsArray["units"]["air_pressure_at_sea_level"];
+    regenmenge_units = (const char*)unitsArray["units"]["precipitation_amount"];
+    temperature_units = (const char*)unitsArray["units"]["air_temperature"];
+    windspeed_units = (const char*)unitsArray["units"]["wind_speed"];
+    humidity_units = (const char*)unitsArray["units"]["relative_humidity"];
+    clouds_units = (const char*)unitsArray["units"]["cloud_area_fraction"];
+    pressure_units = (const char*)unitsArray["units"]["air_pressure_at_sea_level"];
 
     for ( uint16_t i = 0; i < sizeof(langmap_table)/4; i++)
     {
