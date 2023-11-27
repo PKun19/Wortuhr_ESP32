@@ -1,4 +1,4 @@
-# Wortuhr_ESP32_mp3
+# Wortuhr_ESP32
 ESP32 Wortuhr mit Sound, Wetter, Spiele, Transitions, Webzugriff  
 -----------------------------------------------------------------
 ## Hinweis:
